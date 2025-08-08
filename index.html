@@ -6,6 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hbd</title>
 <style>
+  /* This creates a pseudo-element that covers the whole body */
+  @media print {
+    body::before {
+      content: " ";
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: white; /* Or any solid color */
+      z-index: 9999;
+    }
+  }
+
+  /* Some screen capture tools use a print-like mechanism */
+  .no-screenshot {
+      position: relative;
+  }
+
+  .no-screenshot::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      background-image: linear-gradient(45deg, rgba(0,0,0,0) 49.9%, #000 49.9%, #000 60%, rgba(0,0,0,0) 60%), linear-gradient(45deg, #000 10%, rgba(0,0,0,0) 10%);
+      background-size: .5em .5em;
+      opacity: 0.3;
+  }
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic);
 
 html,
@@ -182,6 +215,20 @@ body {
 </head>
 
 <body>
+  <script>
+  const password = "thalassophobia typophobia"; 
+
+      let userInput = prompt("hint: nama phobia mu dan phobiaku\n(english, huruf kecil, spasi).\nenter password:");
+
+  while (userInput !== password && userInput !== null) {
+    alert("awokawokawok salah");
+    userInput = prompt("hint: nama phobia mu dan phobiaku\n(english, huruf kecil, spasi).\nenter password:");
+  }
+  if (userInput !== password) {
+    document.body.innerHTML = "<h1 style='text-align: center; color: white; font-family: sans-serif;'>gapapa deh pw nya 'thalassophobia typophobia'</h1>";
+  }
+
+</script>
     <div class="particles-container"></div>
     <div class="velas">
         <div class="fuego"></div>
@@ -348,13 +395,13 @@ body {
         <rect x="10" y="475.571" fill="#fefae9" width="180" height="4" />
     </svg>
     <div class="text">
-        <h1>Happy Birthday Sayaaaaang</h1>
+        <h1>Happy Birthday Ipaaaa^^</h1>
     </div>
         <div id="typing-container">
         <p class="typed-text"></p>
     </div>
 </body>
-<script>
+<script> 
 document.addEventListener('DOMContentLoaded', () => {
     const particlesContainer = document.querySelector('.particles-container');
     if (!particlesContainer) return;
@@ -379,7 +426,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('DOMContentLoaded', () => {
     const typeConfig = {
-      paragraph: "kangen banget dawg                                                                                                                                                   contoh text: The kids were loud. They were way too loud for Jerry, especially since this was a four-hour flight. The parents didn't seem to be able, or simply didn't want, to control them. They were yelling and fighting among themselves and it was impossible for any of the passengers to concentrate or rest. He thought about politely tapping on the parents' shoulders and asking them to try and get their kids under a bit more control, but before he did he came up with a better idea. Sure, it was a bit sinister, and he'd probably end p in a lot of trouble, but he really didn't care at that point.",
+      paragraph: "Haii apakabar? Ini aku tulis tanggal 27/6/25 \nIni harusnya aku kirim di ulang tahunmu jadi happy birthday!\nAku liat di ig kamu kuliah di sekolah penerbangan ya? Best of luck with that\nTapi aku kok sama sekali gapernah denger ya kamu mau masuk ke situ, atau punya cita cita jadi pramugari, ngerasa gagal banget pernah jadi cowomu :c\nOh ya kalo kmu udah punya pacar, gapapa gausa di bales cukup kamu baca sampe akhir aja aku udah seneng\nKalo nggak, aku harap kita bisa ngobrol lagi, i yearn for you ngl\nKamu jarang bikin story ya, atau mungkin aku di hide kalo boleh tolong di unhide\nRada nyesel sebenernya ngetarang kamu liat storyku berkali kali jadi jarang banget di liat:[\nOr if you hate me idk what to say, maybe just tell me? I just want to know maybe I’ll move on\nAku belajar banyak hal dari kamu dan karena kehadiranmu: kalo dijahatin gausa dibales, sabar jadi orang, aku jadi bisa liat kekuranganku, aku tau kamu gasuka aku minta maaf karna terkesan manipulatif tapi maaf banget aku cuma mau kita grow bareng bareng salah satunya dengan cara kasar gitu soalnya works di aku ternyata cara kerja otak cewek sama cowok itu bertolak belakang banget dan aku pikir kamu dimanja dirumah jadi aku pengen nunjukin sisi lain dunia, ternyata itu cuma perkiraanku aja, lama banget ya nyadarnya wkwk, jadi sekarang si harusnya udah beda cara ku ngomong, apa lagi ya aku masih suka lupa sih hehe dan kalo berubah masi perlu waktu lama banget, dan aku sadar lagi perspektif itu banyak yg buat opini jadi beda padahal udah lama sadar malah lupa lagi\nTerus yang terakhir jangan gengsi soal perasaan maka dari ituu aku mau ngeluarin unek unekku, maunya kirim hari ini (tanggal pesan ini ditulis) sih tapi aku pengen berusaha nahan egoku\nJadi sebelumnya, sepanjang tahun rasanya galau mulu, dulu pas aktif ngegym lumayan berkurang tapi sebulan setelah stop jadi makin parah dan semoga sekarang puncaknya\nHari ini aku ngerasa kangen banget, sedih banget, kepikiran kamu terus tapi hari ini paling parah\nAku gatau sejak kapan tapi lambat laun aku rasa nafsu makanku nurun terus walaupun kadang naik turun\nJadi kemarin malem pas mau makan aku masak mie 2 bungkus ga sampe setengah udah ga pengen\nmakan trs malah galau terus mie e ke pebalih gen\nTerus abis itu aku ke kamar bacain chat kamu bahkan yang 2021 nomer yang lama kayanya dari sebelum jam 12 sampe jam 4 subuh, i hope i have the courage like you did back in 2021 when u sent me a long text even you know my respond wont be good\nAku kurang pinter soal ngerangkai kata, tapi what I said like sorry or love I really mean it with my heart, I never expected to have a heart break again or even falling in love again cus I’ve been dealing with a great depression even don’t have willing to live again but there you are who fixed my heart, if you remember I told you that my heart is on repair wkwk terima kasih atas warna dalam hidupku yang buat tahun ini berkesan, tanpamu tahun ini jadi berjalan lebih lama, kalo kamu pikir aku suka bikin kaya gini kamu salah besar ini pertama kalinya aku ngetik sepanjang ini diluar tugas wkwkkw lega banget rasanya dan pesan ini aku tulis cuma buat sampein unek unekku jadi kalo kamu pikir ada yang aku karang atau aku ada magsud lain, anggap saja memang begitu. Makasi banyak udah luangin waktu dan mau baca sampe akhir, best of luck on everything my last heartbreak.",
       typingSpeed: 40, 
     };
 
@@ -401,6 +448,5 @@ document.addEventListener('DOMContentLoaded', () => {
     type();
 });
 </script>
-
 
 </html>
